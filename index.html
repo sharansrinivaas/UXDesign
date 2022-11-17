@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task Manager V1.0</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+    background-image: url('Assets/Images/bg1.gif');
+    /*background-size: cover; */
+  }
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 0px solid #ffffff;}
+
+
+input[type=email], input[type=password] {
+  width: 50%;
+  text-align: center;
+  padding: 12px 20px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 162, 0);
+  box-sizing: border-box;
+  color: rgba(255, 255, 255);
+  background: transparent;
+}
+
+a:link {
+  color: rgb(252, 159, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: grey;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: DeepSkyBlue;
+  background-color: transparent;
+  text-decoration: none;
+  
+}
+a:active {
+  color: DeepSkyBlue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+button {
+  background-color: #dfad0a;
+  color: rgb(43, 43, 43);
+  padding: 14px 15px;
+  margin: 40px;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 25%;
+}
+
+button {
+  background-color: #dfad0a;
+  color: rgb(43, 43, 43);
+  padding: 14px 15px;
+  margin: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 25%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+h2 {text-align: center;}
+</style>
+</head>
+<body> 
+<br><br><br>
+<h2><h2 style="color: rgb(231, 162, 0);">Welcome to Your Task Manager</h2></p>
+<form action="Main Dashboard.html" method="post">
+  <br><br><br>
+  <div class="container">
+      <center><label for="Email"><b style="color:rgb(231, 162, 0);"><b>Email Address</b></label></center>
+      <center> <input type="email" placeholder="Enter Your Email Address" name="Email" required></center>
+    <br><br>
+    <center><label for="psw"><b>Password</b></label></center>
+    <center><input type="password" placeholder="Enter Password" name="psw" required id="myInput"></center>
+    <center><input type="checkbox" onclick="myFunction()">Show Password</center>
+    <br><br>    
+    <label>
+      <center><input type="checkbox" checked="checked" name="remember"> Remember me on this device</center>
+    <center><button type="submit">Submit</button></center>
+    <br>
+    <center><a href="Signup.html">New User? Sign up</center></a>
+    <br><br>
+    <br><br>
+    <center><a href="Resetpass.html">Having Trouble Logging In?</a></center>
+    </label>
+  </div>
+</form>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+  </script>
+
+</body>
+</html>
