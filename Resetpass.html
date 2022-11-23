@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+    background-image: url('Assets/Images/bg2.gif');
+    background-size: cover;
+  }
+body {font-family: Comic -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Helvetica, sans-serif;}
+* {box-sizing:border-box
+}
+::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+input[type=email]{
+    width: 30%;
+  color: white;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #4e4e4e;
+  border-radius: 10px;
+  text-align: center;
+  opacity: 0.88;
+}
+
+button {
+  background-color: #02d85f;
+  color: white;
+  padding: 14px 20px;
+  margin: 15px ;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+a:link {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+button:hover {
+  opacity:1;
+}
+.backbtn {
+  padding: 14px 20px;
+  margin: px;
+  background-color: #eea90a;
+}
+
+.cbn {
+  padding: 14px 20px;
+  margin: 0 px;
+  background-color: #ee0aee;
+}
+
+.backbtn, .supbn, .cbn {
+  width: 30%;
+}
+
+@media screen and (max-width: 300px) {
+  .backlbtn, .supbn, .cbn {
+     width: 100%;
+  }
+}
+
+a { color: inherit; }
+
+</style>
+<body>
+    <form action="Resetredir.html" style="border: 0.5px solid #ccc">
+    <div class="container">
+        <br><br><br><br><br><br><br><br><br><br>
+        <center><h1 style="color: rgb(255, 255, 255);">Please Enter Your Registered Email Address</h1></center>
+        <center><label for="email"><b><b style="color: rgb(255, 255, 255);">Email Address</b></label></center>
+        <center><input type="email" placeholder="Enter Email" name="email" required></center>
+
+        <center><a href="index.html"><button type="button" class="backbtn">Back</a></button>
+            <a href="Resetredir.html"><button type="submit" class="submit">Submit</button></a>
+            <button type="Contact Us" class="cbn"><a href="Contactus.html">Contact Us</center></a>
+      </form>
+    </div>
