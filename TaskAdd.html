@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/f4877c9f33.js" crossorigin="anonymous"></script>
+<link href='https://css.gg/css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="styles.css" rel="stylesheet">
+<style>
+ul {list-style-type: none;}
+    body {
+    background-image: url('Assets/Images/bg3.jpg');
+    background-size: cover;
+    overflow: hidden;
+  }
+body {font-family: Comic -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Helvetica, sans-serif;}
+
+input[type=text], input[type=text], input[type=date]{
+  width: 30%;
+  color: white;
+  padding: 10px;
+  margin: 5px 0 20px 200px;
+  display: inline-block;
+  border: none;
+  background: #4e4e4e;
+  border-radius: 10px;
+  text-align: fixed;
+  opacity: 0.88;
+}
+button {
+  background-color: #02d85f;
+  color: white;
+  padding: 14px 20px;
+  margin: 5px ;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+a { color: inherit; }
+
+button:hover {
+  opacity:1;
+}
+
+.dbtn {
+  padding: 14px 20px;
+  margin: px;
+  background-color: #0aee7c;
+  left: 50px;
+
+}
+
+.rbn {
+  padding: 14px 20px;
+  margin: 0 px;
+  background-color: #ee800a;
+}
+
+.nbar {         /*Navigation Bar*/
+  height: 100%;
+  width: 40px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow: hidden;
+  padding-top: 10px;
+  opacity: 0.95;
+  transition: width 1s;
+}
+
+.nbar:hover{    /*Navigation Hover*/
+    width: 170px;
+}
+
+.topbar {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+    background-image: url('Assets/Images/topbar.png');
+    /*object-fit: cover;*/
+
+}
+.nbar a {
+    padding: 0px 0px 100px 5px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #818181;
+  display: block;
+  margin: 15px;
+}
+.nbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.nbar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+h1 {
+  text-indent: 200px
+}
+h2 {
+    text-indent: 200px;
+}
+
+h3 {
+    text-indent: 200px;
+}
+
+p{
+  text-indent: 200px;
+}
+
+.dbtn, .rbn {
+  width: 30%;
+}
+@media screen and (max-width: 300px) {
+  .backlbtn, .supbn, .cbn {
+     width: 100%;
+  }
+}
+
+p.small {           /*Clock Text*/
+    text-indent: 200px;
+    line-height: 0.0px;
+  }
+
+</style>
+<body>
+<div class="topbar">
+    <h1 style="color: white">Tasks</h1>
+    <p class="small"; style="color: white">Current Date and Time is: <span id="datetime"></span></p>
+
+<script> /*Time Script*/
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script>
+</div>
+
+<div class = "nbar">
+  <a href="Main Dashboard.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="Wellbeing.html"> <i class="fa-solid fa-circle-plus"></i>  Wellbeing</a>
+  <nbar><a class="active" href="Tasks.html"><i class="fa fa-list" aria-hidden="true"></i> Tasks</a>
+  <nbar><a href="Calendar.html"><i class="gg-calendar"></i>Calendar</a></nbar>
+  <br><br><br>
+  <nbar><a href="Settings.html"><i class="fa-solid fa-cog"></i> Settings</nbar></a>
+
+</div>
+
+<form action="TaskAdd.html" method="post">
+  <br><br><br><br>
+  <h2 style="color: #ffffff">Add a Task: </h2>
+  <div class="container">
+      <label for="text"><h2 style="color:rgb(255, 255, 255);"><b>Task Name</h2></label>
+      <input type="text" placeholder="Enter Task Name" name="Name" required style="left: 20px">
+      <label for="text"><h2 style="color:rgb(255, 255, 255);">Task Description</b></label>
+      <br><br>
+      <input type="text" placeholder="Enter Description" name="text" required>
+      <label for="text"><h2 style="color: rgb(255, 255, 255);">Task Time</h2></label>
+    <input type="date" id="Dob" name="Dob">
+    <input type="checkbox" id="Repeat" name="Repeat" value="Repeat">
+    <b><label for="rtask"> Repeat Task?</label>
+    <label>
+    <br>
+  <center><button type="submit" class="dbtn" onclick="myFunction()"><a href="Tasks.html">Done</button></a></center>
+  </form>
+  </label>
+  <script>
+    function myFunction() {
+      alert("Task Added Successfully");
+    }
+    </script>
+
+</body>
+</html>
+
